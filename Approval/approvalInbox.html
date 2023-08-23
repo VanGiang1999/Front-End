@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approval Inbox</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wb_approval">
+        <div class="wb_approval_fix">
+            <div class="wb_approval_top"></div>
+            <div class="wb_approval_center">
+                  <div class="wb_approval_center_top">
+                     <div class="wb_approval_center_top_left">
+                         Transaction
+                     </div>
+                     <div class="wb_approval_center_top_right">
+                        <div class="currency-switcher">
+                            <div class="dropdown">
+                              <div class="caption">
+                                <span>Realtime/Schedule (Single)</span>
+                                <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L0.803847 4.84425e-07L11.1962 1.80519e-06L6 9Z" fill="white"/>
+                                </svg>                                
+                              </div>
+                              <div class="list">
+                                <div class="item selected" data-item="data1">
+                                  <span>Realtime/Schedule (Single)</span>
+                                  <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L0.803847 4.84425e-07L11.1962 1.80519e-06L6 9Z" fill="white"/>
+                                </svg>
+                                </div>
+                                <div class="item" data-item="data2">
+                                  <span>Batch/Salary transfer </span>
+                                  <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L0.803847 4.84425e-07L11.1962 1.80519e-06L6 9Z" fill="white"/>
+                                </svg>
+                                </div>
+                                <div class="item" data-item="data3">
+                                  <span>Overseas remittance</span>
+                                  <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L0.803847 4.84425e-07L11.1962 1.80519e-06L6 9Z" fill="white"/>
+                                </svg>
+                                </div>
+                              </div>
+                            </div>
+                         </div>
+                     </div>
+                  </div>
+                  <div class="wb_approval_center_bottom">
+                    <div class="wb_approval_center_bottom_left">
+                        Total 3 item(s)
+                    </div>
+                    <div class="wb_approval_center_bottom_right">
+                        <span>1 week</span>
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#828282" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="wb_bg_gradient"> 
+            <div class="wb_approval_bottom">
+                <div class="realtime_schedule" id="tblData">
+                    <div class="wb_approval_label">
+                        <label class="wb_approval_select_all">All (maximum 20 transactions)
+                            <input type="checkbox" id="checkAll" >
+                            <span class="check_mark"></span>
+                        </label>
+                    </div>
+                    <div class="wb_approval_transactions_list">
+                         <div class="wb_approval_transactions_item single_transfer">
+                            <div class="wb_approval_transactions_item_content_top">
+                                <div class="wb_approval_transactions_item_content_top_left">
+                                     <div class="wb_approval_transactions_item_content_select">
+                                        <label class="wb_approval_select_all">
+                                            <input type="checkbox">
+                                            <span class="check_mark"></span>
+                                        </label>
+                                     </div>
+                                     <div class="wb_approval_transactions_item_content_time">
+                                        <p>Single transfer</p>
+                                        <p>10.10.2022 10:00:00</p>
+                                     </div>
+                                </div>
+                                <div class="wb_approval_transactions_item_content_top_right">
+                                    Duplicate
+                                </div>
+                            </div>
+                            <div class="wb_approval_transactions_item_content_center">
+                                <span class="currency">VND</span> <span class="money">10,000,000</span>
+                            </div>
+                            <div class="wb_approval_transactions_item_content_bottom">
+                                <div class="wb_approval_transactions_content_item">
+                                   <div class="wb_approval_transactions_content_item_left">
+                                    Number of items
+                                   </div>
+                                   <div class="wb_approval_transactions_content_item_right">
+                                    4 item(s)
+                                   </div>
+                                </div>
+                                <div class="wb_approval_transactions_content_item">
+                                    <div class="wb_approval_transactions_content_item_left">
+                                      Status
+                                    </div>
+                                    <div class="wb_approval_transactions_content_item_right">
+                                      Waiting for approval
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="wb_approval_transactions_item single_transfer">
+                            <div class="wb_approval_transactions_item_content_top">
+                                <div class="wb_approval_transactions_item_content_top_left">
+                                     <div class="wb_approval_transactions_item_content_select">
+                                        <label class="wb_approval_select_all">
+                                            <input type="checkbox">
+                                            <span class="check_mark"></span>
+                                        </label>
+                                     </div>
+                                     <div class="wb_approval_transactions_item_content_time">
+                                        <p>Single transfer</p>
+                                        <p>10.10.2022 10:00:00</p>
+                                     </div>
+                                </div>
+                                <div class="wb_approval_transactions_item_content_top_right">
+                                    Duplicate
+                                </div>
+                            </div>
+                            <div class="wb_approval_transactions_item_content_center">
+                                <span class="currency">VND</span> <span class="money">10,000,000</span>
+                            </div>
+                            <div class="wb_approval_transactions_item_content_bottom">
+                                <div class="wb_approval_transactions_content_item">
+                                   <div class="wb_approval_transactions_content_item_left">
+                                    Number of items
+                                   </div>
+                                   <div class="wb_approval_transactions_content_item_right">
+                                    4 item(s)
+                                   </div>
+                                </div>
+                                <div class="wb_approval_transactions_content_item">
+                                    <div class="wb_approval_transactions_content_item_left">
+                                      Status
+                                    </div>
+                                    <div class="wb_approval_transactions_content_item_right">
+                                      Waiting for approval
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                     
+                    </div>
+                </div>
+                <div class="batch_salary_transfer">
+                    <div class="wb_approval_transactions_list">
+                        <div class="wb_approval_transactions_item single_transfer">
+                           <div class="wb_approval_transactions_item_content_top">
+                               <div class="wb_approval_transactions_item_content_top_left">
+                                    <div class="wb_approval_transactions_item_content_select">
+                                       <label class="wb_approval_select_all">
+                                           <input type="checkbox">
+                                           <span class="check_mark"></span>
+                                       </label>
+                                    </div>
+                                    <div class="wb_approval_transactions_item_content_time">
+                                       <p>Batch/Salary transfer</p>
+                                       <p>10.10.2022 10:00:00</p>
+                                    </div>
+                               </div>
+                               <div class="wb_approval_transactions_item_content_top_right">
+                                   Duplicate
+                               </div>
+                           </div>
+                           <div class="wb_approval_transactions_item_content_center">
+                               <span class="currency">VND</span> <span class="money">10,000,000</span>
+                           </div>
+                           <div class="wb_approval_transactions_item_content_bottom">
+                               <div class="wb_approval_transactions_content_item">
+                                  <div class="wb_approval_transactions_content_item_left">
+                                   Number of items
+                                  </div>
+                                  <div class="wb_approval_transactions_content_item_right">
+                                   4 item(s)
+                                  </div>
+                               </div>
+                               <div class="wb_approval_transactions_content_item">
+                                   <div class="wb_approval_transactions_content_item_left">
+                                     Status
+                                   </div>
+                                   <div class="wb_approval_transactions_content_item_right">
+                                     Waiting for approval
+                                   </div>
+                               </div>
+                           </div>
+                        </div>
+                        <div class="wb_approval_transactions_item single_transfer">
+                            <div class="wb_approval_transactions_item_content_top">
+                                <div class="wb_approval_transactions_item_content_top_left">
+                                     <div class="wb_approval_transactions_item_content_select">
+                                        <label class="wb_approval_select_all">
+                                            <input type="checkbox">
+                                            <span class="check_mark"></span>
+                                        </label>
+                                     </div>
+                                     <div class="wb_approval_transactions_item_content_time">
+                                        <p>Batch/Salary transfer</p>
+                                        <p>10.10.2022 10:00:00</p>
+                                     </div>
+                                </div>
+                                <div class="wb_approval_transactions_item_content_top_right">
+                                    Duplicate
+                                </div>
+                            </div>
+                            <div class="wb_approval_transactions_item_content_center">
+                                <span class="currency">VND</span> <span class="money">10,000,000</span>
+                            </div>
+                            <div class="wb_approval_transactions_item_content_bottom">
+                                <div class="wb_approval_transactions_content_item">
+                                   <div class="wb_approval_transactions_content_item_left">
+                                    Number of items
+                                   </div>
+                                   <div class="wb_approval_transactions_content_item_right">
+                                    4 item(s)
+                                   </div>
+                                </div>
+                                <div class="wb_approval_transactions_content_item">
+                                    <div class="wb_approval_transactions_content_item_left">
+                                      Status
+                                    </div>
+                                    <div class="wb_approval_transactions_content_item_right">
+                                      Waiting for approval
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="wb_approval_transactions_item single_transfer">
+                            <div class="wb_approval_transactions_item_content_top">
+                                <div class="wb_approval_transactions_item_content_top_left">
+                                     <div class="wb_approval_transactions_item_content_select">
+                                        <label class="wb_approval_select_all">
+                                            <input type="checkbox">
+                                            <span class="check_mark"></span>
+                                        </label>
+                                     </div>
+                                     <div class="wb_approval_transactions_item_content_time">
+                                        <p>Batch/Salary transfer</p>
+                                        <p>10.10.2022 10:00:00</p>
+                                     </div>
+                                </div>
+                                <div class="wb_approval_transactions_item_content_top_right">
+                                    Duplicate
+                                </div>
+                            </div>
+                            <div class="wb_approval_transactions_item_content_center">
+                                <span class="currency">VND</span> <span class="money">10,000,000</span>
+                            </div>
+                            <div class="wb_approval_transactions_item_content_bottom">
+                                <div class="wb_approval_transactions_content_item">
+                                   <div class="wb_approval_transactions_content_item_left">
+                                    Number of items
+                                   </div>
+                                   <div class="wb_approval_transactions_content_item_right">
+                                    4 item(s)
+                                   </div>
+                                </div>
+                                <div class="wb_approval_transactions_content_item">
+                                    <div class="wb_approval_transactions_content_item_left">
+                                      Status
+                                    </div>
+                                    <div class="wb_approval_transactions_content_item_right">
+                                      Waiting for approval
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="wb_approval_transactions_item single_transfer">
+                            <div class="wb_approval_transactions_item_content_top">
+                                <div class="wb_approval_transactions_item_content_top_left">
+                                     <div class="wb_approval_transactions_item_content_select">
+                                        <label class="wb_approval_select_all">
+                                            <input type="checkbox">
+                                            <span class="check_mark"></span>
+                                        </label>
+                                     </div>
+                                     <div class="wb_approval_transactions_item_content_time">
+                                        <p>Batch/Salary transfer</p>
+                                        <p>10.10.2022 10:00:00</p>
+                                     </div>
+                                </div>
+                                <div class="wb_approval_transactions_item_content_top_right">
+                                    Duplicate
+                                </div>
+                            </div>
+                            <div class="wb_approval_transactions_item_content_center">
+                                <span class="currency">VND</span> <span class="money">10,000,000</span>
+                            </div>
+                            <div class="wb_approval_transactions_item_content_bottom">
+                                <div class="wb_approval_transactions_content_item">
+                                   <div class="wb_approval_transactions_content_item_left">
+                                    Number of items
+                                   </div>
+                                   <div class="wb_approval_transactions_content_item_right">
+                                    4 item(s)
+                                   </div>
+                                </div>
+                                <div class="wb_approval_transactions_content_item">
+                                    <div class="wb_approval_transactions_content_item_left">
+                                      Status
+                                    </div>
+                                    <div class="wb_approval_transactions_content_item_right">
+                                      Waiting for approval
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="wb_approval_transactions_item single_transfer">
+                            <div class="wb_approval_transactions_item_content_top">
+                                <div class="wb_approval_transactions_item_content_top_left">
+                                     <div class="wb_approval_transactions_item_content_select">
+                                        <label class="wb_approval_select_all">
+                                            <input type="checkbox">
+                                            <span class="check_mark"></span>
+                                        </label>
+                                     </div>
+                                     <div class="wb_approval_transactions_item_content_time">
+                                        <p>Batch/Salary transfer</p>
+                                        <p>10.10.2022 10:00:00</p>
+                                     </div>
+                                </div>
+                                <div class="wb_approval_transactions_item_content_top_right">
+                                    Duplicate
+                                </div>
+                            </div>
+                            <div class="wb_approval_transactions_item_content_center">
+                                <span class="currency">VND</span> <span class="money">10,000,000</span>
+                            </div>
+                            <div class="wb_approval_transactions_item_content_bottom">
+                                <div class="wb_approval_transactions_content_item">
+                                   <div class="wb_approval_transactions_content_item_left">
+                                    Number of items
+                                   </div>
+                                   <div class="wb_approval_transactions_content_item_right">
+                                    4 item(s)
+                                   </div>
+                                </div>
+                                <div class="wb_approval_transactions_content_item">
+                                    <div class="wb_approval_transactions_content_item_left">
+                                      Status
+                                    </div>
+                                    <div class="wb_approval_transactions_content_item_right">
+                                      Waiting for approval
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="wb_approval_button">
+            <button>Approval</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

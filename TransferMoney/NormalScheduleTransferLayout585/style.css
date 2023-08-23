@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background: #f7f7f7;
+    font: 14px/1.5 "Roboto", Arial, sans-serif;
+  }
+  
+  .beneficiary-bank .beneficiary-bank-top {
+    height: 232px;
+    background-color: #649eff;
+  }
+  .beneficiary-bank-info {
+    position: relative;
+    background-color: #ffffff;
+    top: 104px;
+    height: 100vh;
+    padding: 30px;
+    border-radius: 30px 30px 0px 0px;
+  }
+  .beneficiary-bank-search-box {
+    position: relative;
+  }
+  .beneficiary-bank-search {
+    background: #ffffff;
+    border: 1px solid #c1bfbf;
+    border-radius: 15px;
+    height: 37px;
+    outline: none;
+    width: 93%;
+    font-size: 12px;
+    padding-left: 6%;
+    position: relative;
+  }
+  
+  .beneficiary-bank-search::placeholder {
+    color: #bdbdbd;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .beneficiary-bank-search-box .icon {
+    position: absolute;
+    top: 59%;
+    right: 3%;
+    transform: translate(-50%, -50%);
+  }
+  .beneficiary-bank-list{
+    padding: 30px 0px;
+  }
+  .beneficiary-bank-item{
+    border-bottom: 1px solid #BDBDBD;
+    padding-bottom: 11px;
+    margin-bottom: 15px;
+  }
+  .beneficiary-bank-item:last-child{
+    padding: 0;
+    margin-bottom: 0;
+    border: none;
+  }
+  .beneficiary-bank-name,
+  .beneficiary-bank-brand,
+  .beneficiary-bank-code {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  
+  .beneficiary-bank-name .beneficiary-bank-name-left,
+  .beneficiary-bank-brand .beneficiary-bank-brand-left,
+  .beneficiary-bank-code .beneficiary-bank-code-left {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #bdbdbd;
+  }
+  
+  .beneficiary-bank-name .beneficiary-bank-name-right,
+  .beneficiary-bank-brand .beneficiary-bank-brand-right,
+  .beneficiary-bank-code .beneficiary-bank-code-right {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4f4f4f;
+    text-align: end;
+    margin-bottom: 5px;
+  }
+  .beneficiary-bank-code .beneficiary-bank-code-right {
+    color: #bdbdbd;
+  }
+  

@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font: 14px/1.5 "Roboto", Arial, sans-serif;
+    background-color: #649eff;
+  }
+  .home_loan_success {
+    background-color: #ffffff;
+    border-radius: 30px 30px 0px 0px;
+    margin-top: 67px;
+    height: 100vh;
+    padding: 0px 30px;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .home_loan_success_dots1{
+    background: #A4C8FF;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    border-radius: 50%;
+    top: 5%;
+    left: 35%;
+  }
+  .home_loan_success_dots2{
+    background: #A4C8FF;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    border-radius: 50%;
+    top: 10%;
+    right: 27%;
+  }
+  .home_loan_success_dots3{
+    background: #A4C8FF;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    border-radius: 50%;
+    top: 25%;
+    left: 27%;
+  }
+  .home_loan_success_dots4{
+    background: #A4C8FF;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    border-radius: 50%;
+    top: 27%;
+    right: 29%;
+  }
+  .home_loan_success .home_loan_success_icon {
+    padding-top: 85px;
+    text-align: center;
+    padding-bottom: 69px;
+  }
+  .home_loan_success p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+  }
+  .home_loan_success p span {
+    color: #649eff;
+  }
+  .home_loan_button_success{
+    position: fixed;
+    width: 100%;
+    bottom: 33px;
+  }
+  .home_loan_button_success button{
+    background: #649EFF;
+    border: 1px solid #649EFF;
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 16px;
+    width: 80%;
+    position: relative;
+    left: 10%;
+  }

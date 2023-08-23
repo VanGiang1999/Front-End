@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font: 14px/1.5 "Roboto", Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+.home_loan_bg {
+  background-color: #649eff;
+  height: 173px;
+}
+.home_loan_content {
+  padding: 0 30px;
+}
+.home_loan_content_top {
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 15px;
+  margin-top: -130px;
+  padding: 20px;
+  position: relative;
+  height: 155px;
+  padding-bottom: 0px;
+}
+.home_loan_content_title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4f4f4f;
+  margin-bottom: 14px;
+}
+.home_loan_content_title span {
+  color: #649eff;
+}
+.home_loan_content_message {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #4f4f4f;
+}
+.home_loan_content_icon {
+  position: absolute;
+  bottom: -7px;
+  right: 7px;
+}
+.home_loan_next_page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+.home_loan_next_page .home_loan_next_page_item {
+  background: #bdbdbd;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 5px 12px;
+  border-radius: 50%;
+  margin-right: 24px;
+}
+.home_loan_next_page .home_loan_next_page_item:last-child {
+  margin-right: 0;
+}
+.home_loan_next_page .home_loan_next_page_item.active {
+  background: #649eff;
+}
+.home_loan_info_customer {
+  background: #ffffff;
+  border-radius: 30px 30px 0px 0px;
+  margin-top: 24px;
+  padding: 0px 30px;
+  padding-top: 40px;
+  height: 100vh;
+}
+.home_loan_info_customer_title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #828282;
+  margin: 0;
+  margin-bottom: 14px;
+}
+.clearable {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.clearable input[type="text"] {
+  padding-right: 24px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 15px;
+  height: 38px;
+  padding-left: 14px;
+  outline: none;
+}
+.clearable__clear {
+  display: none;
+  position: absolute;
+  right: 14px;
+  top: 11px;
+  font-style: normal;
+  font-size: 1.2em;
+  user-select: none;
+  cursor: pointer;
+}
+.clearable input::-ms-clear {
+  /* Remove IE default X */
+  display: none;
+}
+
+.home_loan_info_customer_email,
+.home_loan_info_customer_address {
+  margin-top: 32px;
+}
+.home_loan_info_customer_phone,.home_loan_info_customer_email{
+  position: relative;
+}
+.home_loan_info_customer_email .error,.home_loan_info_customer_phone .error {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #eb5757;
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  margin: 0;
+  display: none;
+}
+.home_loan_info_customer_email .error.active,.home_loan_info_customer_phone .error.active{
+  bottom: -27px;
+  display: flex;
+  position: absolute;
+}
+.home_loan_info_customer_email .error svg, .home_loan_info_customer_phone.error svg{
+  margin-right: 8px;
+}
+.home_loan_info_customer_address .clearable input {
+  position: relative;
+}
+.home_loan_info_customer_address .clearable .icon_sellect {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.home_loan_button {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  padding-top: 15px;
+}
+.home_loan_button button {
+  width: 84%;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #ffffff;
+  background: #649eff;
+  border-radius: 15px;
+  border: none;
+  padding: 14px;
+  left: 8%;
+  position: relative;
+}
+.home_loan_button button.active {
+  background: #bdbdbd;
+}

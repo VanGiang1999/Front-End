@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font: 14px/1.5 "Roboto", Arial, sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .register_installment_service {
+    margin-top: 50px;
+    padding: 0px 25px;
+  }
+  .select_an_installment_method_title,
+  .select_an_card_title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #766f6f;
+    margin-bottom: 16px;
+    padding-left: 10px;
+  }
+  .select_an_installment_method_input,
+  .select_an_card_input {
+    border-bottom: 1px solid #c7c7c7;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+  }
+  .select_an_installment_method_input input,
+  .select_an_card_input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    padding-left: 10px;
+  }
+  .select_an_installment_method_value,
+  .select_an_card_value {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    align-items: center;
+    height: 82px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin-top: 24px;
+    padding: 17px;
+  }
+  .select_an_installment_method_value_left,
+  .select_an_card_value_left {
+    font-weight: 400;
+    font-size: 16px;
+    color: #766f6f;
+    line-height: 19px;
+  }
+  .select_an_installment_method_value_right,
+  .select_an_card_value_right {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-left: 17px;
+  }
+  .select_an_card,
+  .installment_limit {
+    margin-top: 39px;
+  }
+  .installment_limit {
+    padding-bottom: 120px;
+  }
+  .installment_limit_title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #766f6f;
+    margin-bottom: 20px;
+  }
+  .installment_limit_message {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #766f6f;
+    margin-bottom: 20px;
+  }
+  .installment_limit_input {
+    margin-bottom: 16px;
+  }
+  .installment_limit_input input {
+    background: #f8f8f8;
+    border-radius: 10px;
+    height: 70px;
+    width: 95%;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    outline: none;
+    color: #605757;
+    padding-left: 17px;
+  }
+  .installment_limit_description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 9px;
+  }
+  .register_installment_service_button {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-bottom: 30px;
+    background: #ffffff;
+    padding-top: 15px;
+    overflow: hidden;
+  }
+  .register_installment_service_button button {
+    padding: 16px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fdfafa;
+    width: 88%;
+    background: #649eff;
+    border: none;
+    left: 6%;
+    position: relative;
+  }
+  

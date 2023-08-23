@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="Generator" content="EditPLus?">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="color: green;">
+        GeeksForGeeks
+    </h1> Input Box:
+    <input id="input" type="text" class="Disable"  />
+    <br>
+    <br>
+    <button id="setText">
+        setText
+    </button>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+        $("#setText").click(
+            function (event) {
+                $('body input').val(
+                    "GeeksForGeeks");
+            });
+    </script>
+</body>
+
+</html>

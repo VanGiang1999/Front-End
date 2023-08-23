@@ -1,0 +1,1306 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font: 14px/1.5 "Roboto", Arial, sans-serif;
+}
+.wb_approval_top {
+  height: 60px;
+  background-color: #649eff;
+}
+.wb_approval_center {
+  height: auto;
+  background: #f7f7f7;
+  border-radius: 30px 30px 0px 0px;
+  margin-top: -30px;
+  padding: 30px 30px 0px 30px;
+  padding-bottom: 44px;
+}
+.wb_approval_bottom {
+  background: #fff;
+  border-radius: 30px 30px 0px 0px;
+  margin-top: -30px;
+  padding: 32px 7%;
+  position: fixed;
+  overflow: scroll;
+  height: 100vh;
+  width: 86%;
+}
+.wb_bg_gradient {
+  position: relative;
+}
+.wb_bg_gradient::before {
+  content: "";
+  height: 26px;
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  position: absolute;
+  width: 86%;
+  left: 7%;
+  top: -30px;
+  z-index: 9;
+}
+
+.currency-switcher {
+  position: relative;
+  width: 100%;
+}
+
+div.dropdown {
+  position: relative;
+}
+
+div.dropdown.open:after {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+div.dropdown > div.caption {
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 12px 14px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  background: #649eff;
+  justify-content: space-between;
+}
+div.dropdown.open > div.caption {
+  border-radius: 6px 6px 0px 0px;
+}
+div.dropdown > div.list {
+  position: absolute;
+  right: 0;
+  margin-top: -1px;
+  background-color: #f2f2f2;
+  width: 100%;
+  border-radius: 0px 0px 6px 6px;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.15s cubic-bezier(0.25, 0, 0.25, 1.75),
+    opacity 0.1s linear;
+  transition: all 0.15s cubic-bezier(0.25, 0, 0.25, 1.75), opacity 0.1s linear;
+  -webkit-transform: scale(0.85);
+  transform: scale(0.85);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  z-index: -1;
+  visibility: hidden;
+  filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.2));
+}
+
+div.dropdown.open > div.list {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  z-index: 1;
+  visibility: visible;
+  background: #ffffff;
+  z-index: 9999;
+}
+
+div.dropdown > div.list > div.item {
+  padding: 11px 8px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 14px;
+  color: #828282;
+  border-bottom: 0.5px solid #e3e6e8;
+}
+div.dropdown > div.list > div.item:first-child {
+  margin-top: 3px !important;
+}
+div.dropdown > div.list > div.item:last-child {
+  margin-bottom: 3px !important;
+  border: none;
+}
+
+div.dropdown > div.list > div.item.selected {
+  background: #ffffff;
+  pointer-events: none;
+  margin: 0px 3px;
+  border-radius: 3px;
+  display: none;
+}
+div.dropdown > div.list > div.item svg {
+  display: none;
+}
+div.dropdown > div.list > div.item:hover {
+  background: #f8f9fb;
+}
+
+div.dropdown > div.list > div.item span,
+div.dropdown > div.caption span {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  right: 36px;
+  margin-right: 4px;
+  width: 100%;
+  color: #ffffff;
+}
+div.dropdown > div.list > div.item.selected span {
+  color: #649eff;
+}
+div.dropdown > div.list > div.item span {
+  color: #828282;
+  font-weight: 400;
+}
+.currency-title {
+  width: 80%;
+  padding-right: 30px;
+}
+
+.currency-input::placeholder {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.currency-input-zero::placeholder {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.currency-input-zero::placeholder {
+  font-size: 24px;
+}
+.currency-input,
+.currency-input-zero {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.wb_approval_center_top {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  position: relative;
+  height: auto;
+}
+
+.wb_approval_center_top_left {
+  display: flex;
+  align-items: center;
+}
+
+.wb_approval_center_bottom {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 30px;
+}
+
+.wb_approval_center_bottom_left {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_approval_center_bottom_right {
+  color: #649eff;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.wb_approval_center_bottom_right svg {
+  margin-left: 10px;
+}
+.wb_approval_label {
+  border-bottom: 0.7px solid #e0e0e0;
+  padding-bottom: 26px;
+  margin-bottom: 24px;
+}
+.wb_approval_select_all {
+  display: flex;
+  position: relative;
+  padding-left: 38px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  align-items: center;
+  color: #4f4f4f;
+}
+
+.wb_approval_select_all input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.check_mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border: 1.5px solid #d9d9d9;
+  border-radius: 50%;
+}
+
+.wb_approval_select_all input:checked ~ .check_mark {
+  background-color: #699bf7;
+}
+
+.check_mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.wb_approval_select_all input:checked ~ .check_mark:after {
+  display: block;
+}
+
+.wb_approval_select_all .check_mark:after {
+  left: 7px;
+  top: 3px;
+  width: 3px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.wb_approval_transactions_list,
+.batch_salary_transfer,
+.realtime_schedule {
+  padding-bottom: 100px;
+}
+.wb_approval_transactions_item {
+  border-bottom: 0.7px solid #e0e0e0;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+.wb_approval_transactions_item:last-child {
+  border: none;
+  padding-bottom: 120px;
+  margin: 0;
+}
+.wb_approval_transactions_item_content_top {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+}
+.wb_approval_transactions_item_content_time {
+  padding-left: 38px;
+}
+.wb_approval_transactions_item_content_time p:nth-child(1) {
+  margin: 0;
+  margin-bottom: 5px;
+  color: #4f4f4f;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+.wb_approval_transactions_item_content_time p:nth-child(2) {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.wb_approval_transactions_item_content_top_right {
+  text-align: end;
+  color: #eb5757;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0;
+  visibility: hidden;
+}
+.wb_approval_transactions_item_content_select .check_mark {
+  top: 5px;
+}
+
+.wb_approval_transactions_item_content_center {
+  margin-top: 14px;
+  text-align: end;
+}
+.wb_approval_transactions_item_content_center .currency {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_approval_transactions_item_content_center .money {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #649eff;
+  margin-left: 10px;
+}
+
+.wb_approval_transactions_item_content_bottom {
+  background: #eff5ff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+}
+.wb_approval_transactions_content_item {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 15px;
+}
+.wb_approval_transactions_content_item:last-child {
+  margin-bottom: 0;
+}
+.wb_approval_transactions_content_item_left {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_approval_transactions_content_item_right {
+  text-align: end;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4f4f4f;
+}
+.wb_approval_button {
+  position: fixed;
+  bottom: 30px;
+  width: 80%;
+  left: 10%;
+}
+.wb_approval_button button {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  background: #649eff;
+  border: 1px solid #649eff;
+  border-radius: 15px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* Transaction detail information batch */
+
+.wb_transaction_detail_information {
+  padding: 30px 7%;
+  background: #ffffff;
+  border-radius: 30px 30px 0px 0px;
+  margin-top: -30px;
+  padding-bottom: 90px;
+  position: fixed;
+  overflow: scroll;
+  height: 100vh;
+  width: 86%;
+}
+.wb_approval_bottom::-webkit-scrollbar,
+.wb_transaction_detail_information::-webkit-scrollbar,
+.wb_approval_transaction_box::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+
+.wb_title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #649eff;
+  padding-bottom: 5px;
+  border-bottom: 1.5px solid #649eff;
+}
+.wb_transaction_detail_information_top {
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+.wb_information_list.wb_main_content {
+  margin-top: 20px;
+  border-bottom: 0.8px solid #e0e0e0;
+}
+.wb_information_item {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 20px;
+}
+.wb_transaction_detail_information_oversea {
+  padding-bottom: 140px;
+}
+
+.wb_information_item_left {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_information_item_right {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #649eff;
+  text-align: end;
+}
+.wb_icon_show,
+.wb_icon_hide {
+  text-align: center;
+}
+.wb_sub_content {
+  margin-top: 20px;
+}
+.wb_transaction_detail_information_bottom {
+  margin-top: 40px;
+  padding-bottom: 150px;
+}
+
+.wb_account_title .wb_transaction_detail_information_account_item_left,
+.wb_account_title .wb_transaction_detail_information_account_item_center,
+.wb_account_title .wb_transaction_detail_information_account_item_right {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+  text-align: center;
+}
+
+.wb_account_title .wb_transaction_detail_information_account_item_right {
+  text-align: end;
+}
+.wb_transaction_detail_information_account_item {
+  display: grid;
+  grid-template-columns: 20% 45% 35%;
+}
+.wb_transaction_detail_information_account_item.wb_account_title {
+  margin-bottom: 9px;
+}
+.wb_account_number .wb_transaction_detail_information_account_item_left,
+.wb_account_number .wb_transaction_detail_information_account_item_center,
+.wb_account_number .wb_transaction_detail_information_account_item_right {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4f4f4f;
+  text-align: center;
+}
+.wb_account_number .wb_transaction_detail_information_account_item_right {
+  text-align: end;
+}
+.wb_transaction_detail_information_account_item.wb_account_number {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom: 0.5px solid #e0e0e0;
+  align-items: center;
+}
+.wb_transaction_detail_information_account_item.wb_account_number:first-child {
+  margin-top: 24px;
+}
+/* End transaction detail information batch */
+
+/* Transaction detail information Intra/Inter bank */
+
+.wb_transaction_detail_information_inter_bank
+  .wb_transaction_detail_information_inter_bank_item {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 24px;
+}
+
+.wb_transaction_detail_information_inter_bank {
+  padding-bottom: 170px;
+}
+.wb_transaction_detail_information_inter_bank
+  .wb_transaction_detail_information_inter_bank_item_left {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_transaction_detail_information_inter_bank
+  .wb_transaction_detail_information_inter_bank_item_right {
+  text-align: end;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4f4f4f;
+}
+.wb_transaction_detail_information_inter_bank .wb_color {
+  color: #649eff;
+  font-weight: 700;
+}
+.wb_transaction_detail_information_inter_bank_line {
+  height: 0.8px;
+  background-color: #bdbdbd;
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.wb_transaction_detail_information_inter_bank .wb_transfer_type {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: #eff5ff;
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+.wb_transfer_type .wb_transfer_type_title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_transfer_type .wb_transfer_type_value {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4f4f4f;
+  text-align: end;
+}
+.wb_transfer_amount {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+.wb_transfer_amount_title,
+.wb_withdrawal_amount_title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #bdbdbd;
+}
+.wb_transfer_amount_money,
+.wb_withdrawal_amount_money {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #649eff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3px;
+}
+.wb_transfer_amount_money span,
+.wb_withdrawal_amount_money span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #828282;
+  margin-right: 9px;
+}
+.wb_withdrawal_amount {
+  text-align: center;
+}
+.wb_exchange_rate {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+  margin-bottom: 8px;
+}
+.wb_from_account {
+  margin-top: 34px;
+}
+.wb_from_account_title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #bdbdbd;
+}
+.wb_from_account_information {
+  display: grid;
+  grid-template-columns: 32% 65%;
+  grid-gap: 3%;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 15px;
+  padding: 13px 20px;
+  align-items: center;
+  margin-top: 9px;
+}
+.wb_from_account_information_name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_from_account_information_card {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: end;
+  color: #828282;
+}
+.wb_remark_value {
+  background: #eef4ff;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  padding: 13px 20px;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_to_account {
+  margin-top: 24px;
+}
+.wb_to_account_title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #bdbdbd;
+}
+.wb_to_account_information_box {
+  background: #ffffff;
+  margin-top: 9px;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 15px;
+  padding: 15px 20px;
+}
+.wb_to_account_information_bank {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_to_account_information {
+  display: grid;
+  grid-template-columns: 50% 47%;
+  grid-gap: 3%;
+  margin-top: 11px;
+}
+.wb_to_account_information_name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #649eff;
+}
+.wb_to_account_information_card {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+  text-align: end;
+}
+.wb_indication_value {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+  background: #eef4ff;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  padding: 15px 20px;
+}
+
+.wb_transfer_fee {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 13px 20px;
+  background: #eef4ff;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+}
+.wb_transfer_fee_title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #828282;
+}
+.wb_transfer_fee_money {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #649eff;
+  text-align: end;
+}
+
+.wb_schedule_box {
+  background: #eff5ff;
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+.wb_schedule_item {
+  display: grid;
+  grid-template-columns: 40% 55%;
+  grid-gap: 5%;
+  margin-bottom: 18px;
+}
+.wb_schedule_item:last-child {
+  margin-bottom: 0;
+}
+.wb_schedule_item_left {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_schedule_item_right {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4f4f4f;
+  text-align: end;
+}
+/* End transaction detail information Intra/Inter bank */
+
+/* Transaction detail information oversea */
+.wb_transaction_detail_information_oversea.wb_transaction_detail_information_oversea_update{
+  padding-bottom: 170px;
+}
+.wb_transaction_detail_information_oversea_remitter_list {
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 15px;
+  padding: 14px 20px;
+  margin-top: 24px;
+}
+.wb_transaction_detail_information_oversea_update
+  .wb_transaction_detail_information_oversea_remitter_select {
+  padding: 0;
+  margin: 0;
+}
+.wb_transaction_detail_information_oversea_update
+  .wb_transaction_detail_information_oversea_remitter_select_title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #828282;
+}
+.wb_transaction_detail_information_oversea_remittance {
+  background: #eff5ff;
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.wb_transaction_detail_information_oversea_remittance_right {
+  text-align: end;
+}
+
+.wb_commission {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: #eef4ff;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  padding: 14px 20px;
+  margin-top: 15px;
+}
+.wb_commission_title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_commission_value {
+  font-weight: 700;
+  font-size: 14px;
+  color: #828282;
+  line-height: 16px;
+  text-align: end;
+}
+.wb_transaction_detail_information_oversea_update
+  .wb_transaction_detail_information_top {
+    background: #eef4ff;
+    border: none;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 14px 20px;
+    box-shadow: none;
+}
+.wb_transaction_detail_information_oversea_update .wb_information_list.wb_main_content{
+  margin-top: 0;
+}
+.wb_transaction_detail_information_oversea_update .wb_information_item_right{
+  color: #4F4F4F;
+  font-weight: 400;
+}
+.wb_transaction_detail_information_oversea_update .wb_main_content .wb_information_item{
+  margin-bottom: 5px;
+}
+.wb_line_update{
+  width: 100%;
+  height: 0.7px;
+  background-color: #BDBDBD;
+  margin-bottom: 24px;
+  margin-top: 5px;
+}
+.wb_transaction_detail_information_oversea_content_main {
+  margin-top: 32px;
+}
+
+.wb_transaction_detail_information_oversea_content_main_item {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  margin-bottom: 20px;
+  grid-gap: 4%;
+}
+
+.wb_transaction_detail_information_oversea_content_main_item_left {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_transaction_detail_information_oversea_content_main_item_right {
+  text-align: end;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4f4f4f;
+}
+.wb_line {
+  height: 0.8px;
+  background-color: #bdbdbd;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.wb_transaction_detail_information_oversea_remitter_select {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-top: 24px;
+}
+.wb_transaction_detail_information_oversea_remitter_content_item {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-gap: 4%;
+  margin-bottom: 20px;
+}
+.wb_transaction_detail_information_oversea_remitter_content_item_left {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_transaction_detail_information_oversea_remitter_content_item_right {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4f4f4f;
+}
+
+.wb_transaction_detail_information_oversea .wb_transfer_fee {
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+.wb_transaction_detail_information_oversea .wb_to_account_information_bank {
+  color: #649eff;
+}
+.wb_transaction_detail_information_oversea .wb_to_account_information_name {
+  color: #828282;
+}
+/* End transaction detail information oversea */
+
+/* Approval Inbox Intra, Intra Bank, Overseas */
+.wb_approval.wb_approval_bg_gray.wb_approval_only{
+  padding-bottom: 0;
+}
+.wb_approval_only .wb_transaction_detail_information_top {
+  background: no-repeat;
+  box-shadow: none;
+  border-radius: initial;
+  padding: 0;
+  padding-bottom: 0;
+}
+.wb_approval_only .wb_approval_transaction_box {
+  background: #ffffff;
+  border-radius: 30px 30px 0px 0px;
+  position: inherit;
+  width: 100%;
+  margin-top: 24px;
+  overflow: inherit;
+  height: 100%;
+}
+.wb_approval_only .wb_approval_transaction_content {
+  padding: 30px;
+  padding-bottom: 30px;
+}
+.wb_approval_only .wb_approval_transaction_input{
+  margin-top: 10px;
+  padding: 32px 30px;
+  background: #fff;
+  padding-bottom: 100px;
+}
+.wb_approval_only .wb_icon_show,.wb_approval_only .wb_icon_hide{
+  font-weight: 400;
+  font-size: 14px;
+  color: #828282;
+  line-height: 16px;
+  margin-top: 35px
+}
+.wb_approval_only .wb_icon_show svg,.wb_approval_only .wb_icon_hide svg{
+  margin-left: 7px;
+}
+.wb_approval_only .wb_information_item_right{
+  color: #333333;
+  font-weight: 400;
+}
+.wb_approval_only .wb_bold{
+  font-weight: 700;
+  color: #649EFF;
+}
+.wb_approval_transaction_currency_title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #649eff;
+  margin-bottom: 5px;
+}
+.wb_approval_transaction_currency_line {
+  height: 1.5px;
+  width: 100%;
+  background-color: #649eff;
+}
+.wb_approval_transaction_currency_box {
+  margin: 0px 30px 0px 30px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 15px;
+}
+.wb_approval_transaction_currency_item {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-gap: 4%;
+  margin-top: 20px;
+}
+.wb_approval_transaction_currency_item_left {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_approval_transaction_currency_item_right {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4f4f4f;
+  text-align: end;
+}
+.wb_color {
+  font-weight: 700;
+  color: #649eff;
+}
+.wb_approval_transaction_currency_line2 {
+  height: 0.8px;
+  width: 100%;
+  background-color: #e0e0e0;
+  margin-top: 20px;
+}
+.wb_approval_bg_gray {
+  background-color: #f4f4f4;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.wb_approval_transaction_box {
+  background: #ffffff;
+  border-radius: 30px 30px 0px 0px;
+  position: fixed;
+  width: 100%;
+  margin-top: 24px;
+  overflow: scroll;
+  height: calc(100vh - 260px);
+}
+.wb_approval_transaction_content {
+  padding: 30px;
+  padding-bottom: 150px;
+}
+.wb_approval_transaction_title {
+  display: grid;
+  grid-template-columns: 40% 54% 6%;
+  padding-bottom: 10px;
+  border-bottom: 0.8px solid #e0e0e0;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.wb_approval_transaction_title_left {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4f4f4f;
+}
+.wb_approval_transaction_title_center {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4f4f4f;
+  padding-right: 15px;
+  text-align: end;
+}
+.wb_approval_transaction_title_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wb_approval_transaction_item {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-gap: 4%;
+  margin-bottom: 23px;
+}
+.wb_approval_transaction_item_left {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_approval_transaction_item_right {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4f4f4f;
+  text-align: end;
+}
+.wb_line_gray {
+  height: 1.5px;
+  background-color: #e0e0e0;
+  width: 100%;
+  margin-bottom: 23px;
+}
+.wb_line_0_8_gray {
+  height: 0.8px;
+  background-color: #e0e0e0;
+  width: 100%;
+  margin-bottom: 23px;
+}
+.wb_approval_transaction_input input {
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  width: 93%;
+  height: 46px;
+  padding-left: 6%;
+  outline: none;
+}
+.wb_approval_transaction_input input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #bdbdbd;
+}
+.wb_approval_transaction_button {
+  position: fixed;
+  bottom: 30px;
+  display: grid;
+  grid-template-columns: 34% 64%;
+  width: 86%;
+  left: 7%;
+  grid-gap: 2%;
+}
+.wb_approval_transaction_button_reject button {
+  width: 100%;
+  background: #bdbdbd;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 13px;
+  border: none;
+  height: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.wb_approval_transaction_button_approval button {
+  width: 100%;
+  background: #649eff;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 13px;
+  border: none;
+  height: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.wb_approval_transaction_title.active_color .wb_approval_transaction_title_left,
+.wb_approval_transaction_title.active_color
+  .wb_approval_transaction_title_center {
+  color: #649eff;
+  font-weight: 700;
+}
+.wb_approval_transaction_title.active_color {
+  border-bottom: 1.5px solid #649eff;
+}
+/* End Approval Inbox Intra, Intra Bank, Overseas*/
+
+/* Approval Inbox Batch 02*/
+.wb_approval_batch_02 {
+  background-color: #f4f4f4;
+}
+
+.wb_transaction_detail_information_batch_02 {
+  padding: 40px 30px;
+  padding-bottom: 24px;
+}
+.wb_transaction_detail_information_batch_02
+  .wb_sub_content
+  .wb_information_item_right {
+  font-weight: 400;
+  color: #333333;
+}
+.wb_transaction_detail_information_batch_02_button {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 98% 2%;
+  color: #828282;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 15px;
+  margin: 0px 30px;
+  padding: 17px 20px;
+}
+.wb_transaction_detail_information_batch_02_button_icon {
+  width: 7px;
+  height: 12px;
+}
+
+.wb_approval_batch_02 .wb_approval_transaction_box {
+  position: inherit;
+  height: auto;
+}
+.wb_approval_batch_02 .wb_approval_transaction_content {
+  padding-bottom: 100px;
+}
+/* End Approval Inbox Batch 02*/
+
+/* Approval Inbox Batch 03*/
+.wb_approval_batch_03 {
+  background-color: #f4f4f4;
+}
+.wb_approval_batch_03 .wb_information_item_right {
+  font-weight: 400;
+  color: #4f4f4f;
+}
+.wb_approval_batch_03 .wb_transaction_detail_information_top {
+  margin-bottom: 24px;
+}
+.wb_transaction_detail_information_batch_03 {
+  padding: 40px 30px;
+  padding-bottom: 24px;
+}
+
+.wb_transaction_detail_information_batch_03
+  .wb_transaction_detail_information_top.active
+  .wb_sub_content,
+.wb_transaction_detail_information_batch_03
+  .wb_transaction_detail_information_top.active
+  .wb_icon_hide.active {
+  display: block;
+}
+.wb_transaction_detail_information_batch_03
+  .wb_transaction_detail_information_top
+  .wb_sub_content,
+.wb_transaction_detail_information_batch_03
+  .wb_transaction_detail_information_top
+  .wb_icon_hide,
+.wb_transaction_detail_information_batch_03
+  .wb_transaction_detail_information_top.active
+  .wb_icon_show.active {
+  display: none;
+}
+
+/* End Approval Inbox Batch 03*/
+
+/*  Approval Inbox completed single transfer*/
+.wb_relative {
+  position: relative;
+}
+.wb_icon_completed {
+  text-align: center;
+  margin-top: 50px;
+}
+.wb_completed_single_transfer_and_batch .wb_transaction_detail_information {
+  height: calc(100vh - 80px);
+}
+.wb_completed_dots {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #a4c8ff;
+  opacity: 0.6;
+  top: 6%;
+  position: absolute;
+  left: 42%;
+}
+.wb_completed_dots1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #a4c8ff;
+  opacity: 0.6;
+  position: absolute;
+  left: 68%;
+  top: 8%;
+}
+.wb_completed_dots2 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #a4c8ff;
+  opacity: 0.6;
+  position: absolute;
+  left: 67%;
+  top: 21%;
+}
+.wb_completed_dots3 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #a4c8ff;
+  opacity: 0.6;
+  position: absolute;
+  left: 29%;
+  top: 20%;
+}
+.wb_title_completed {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  margin-top: 40px;
+  color: #649eff;
+  margin-bottom: 40px;
+}
+.wb_completed_single_transfer_and_batch .wb_approval_transaction_currency_box {
+  margin: 0;
+}
+.wb_completed_single_transfer_and_batch
+  .wb_approval_transaction_currency_title {
+  color: #828282;
+}
+.wb_completed_single_transfer_and_batch .wb_approval_transaction_currency_line {
+  background-color: #bdbdbd;
+}
+/* End Approval Inbox completed single transfer*/
+
+/* End Approval Inbox completed batch*/
+.wb_completed_batch .wb_transaction_detail_information {
+  height: calc(100vh - 160px);
+}
+.wb_completed_single_transfer_and_batch .wb_approval_transaction_currency_box2 {
+  margin-top: 24px;
+}
+.wb_approval_transaction_currency_box2 .wb_approval_transaction_currency_item {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.wb_approval_transaction_currency_box2
+  .wb_approval_transaction_currency_item:last-child {
+  margin: 0;
+}
+/* End Approval Inbox completed batch*/

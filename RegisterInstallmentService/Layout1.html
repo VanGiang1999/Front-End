@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="register_installment_service">
+        <div class="select_an_installment_method">
+            <div class="select_an_installment_method_title">
+                Select an installment method
+            </div>
+            <div class="select_an_installment_method_input">
+                <input type="text" id="js_value_installment_method">
+                <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 0H0L5.4902 9L10 0Z" fill="#7E7E7E"/>
+                </svg>                    
+            </div>
+            <div class="select_an_installment_method_value">
+                <div class="select_an_installment_method_value_left">Installment method</div>
+                <div class="select_an_installment_method_value_right">
+                    AUTO INSTALLMENT 
+                </div>
+            </div>
+        </div>
+        <div class="select_an_card">
+            <div class="select_an_card_title">
+                Select a card
+            </div>
+            <div class="select_an_card_input">
+                <input type="text" id="js_value_card">
+                <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 0H0L5.4902 9L10 0Z" fill="#7E7E7E"/>
+                </svg>                    
+            </div>
+            <div class="select_an_card_value">
+                <div class="select_an_card_value_left">
+                    Card type
+                </div>
+                <div class="select_an_card_value_right">
+                    WOORI VISA CREDIT PLATINUM 
+                </div>
+            </div>
+        </div>
+        <div class="installment_limit">
+            <div class="installment_limit_title">
+                Enter auto installment limit
+            </div>
+            <div class="installment_limit_message">
+                From VND 2.000.000 ~ VND 20.000.000 <br> Limit must be multiple of VND 1.000.000
+            </div>
+            <div class="installment_limit_input">
+                <input type="text" placeholder="ENTER LIMIT">
+            </div>
+            <div class="installment_limit_description">
+                This feature only applies to 3 months installment payments and does not apply an interest fee.
+            </div>
+            <div class="installment_limit_description">
+                You can change the automatic installment limit at the menu "Change automatic installment limit".
+            </div>
+        </div>
+    </div> 
+    <div class="register_installment_service_button">
+        <button onclick="return validateForm();">Next</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

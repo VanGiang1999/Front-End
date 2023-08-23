@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background: #f7f7f7;
+    font: 14px/1.5 "Roboto", Arial, sans-serif;
+  }
+  
+  .manage-transfer .manage-transfer-top {
+    height: 232px;
+    background-color: #649eff;
+  }
+  .manage-transfer-info-customer {
+    position: relative;
+    background-color: #ffffff;
+    margin: 0px 30px;
+    top: 142px;
+    height: 143px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    text-align: center;
+  }
+  .manage-transfer-info-customer-avatar-box {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .manage-transfer-info-customer-avatar {
+    padding: 19px 21px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    position: relative;
+    box-shadow: 0px 4px 2px rgb(100 158 255 / 15%);
+  }
+  
+  .manage-transfer-info-customer-name {
+    padding: 0px 20px;
+    padding-top: 40px;
+  }
+  .manage-transfer-info-customer-name p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #828282;
+  }
+  .manage-transfer-info-customer-name span {
+    color: #649eff;
+    text-transform: uppercase;
+  }
+  .manage-transfer-middle-top {
+    top: 80px;
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 15%);
+    border-radius: 15px;
+    margin: 0px 30px;
+  }
+  .manage-transfer-account-list{
+      padding:21px 0px;
+  }
+  .manage-transfer-account-item {
+    padding: 0px 16px;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 4%;
+    margin-bottom: 12px;
+  }
+  .manage-transfer-account-item:last-child{
+      margin-bottom: 0;
+  }
+  .manage-transfer-account-item .manage-transfer-account-item-left {
+    color: #828282;
+  }
+  .manage-transfer-account-item .manage-transfer-account-item-right {
+    color: #4f4f4f;
+  }
+  .manage-transfer-account-item p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .manage-transfer-account-item-right {
+    text-align: end;
+  }
+  .manage-transfer-middle {
+    top: 110px;
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 0px 30px;
+    padding-top: 52px;
+    padding-bottom: 28px;
+  }
+  
+  .manage-transfer-info-item {
+    display: flex;
+    padding: 0px 16px;
+    margin-bottom: 24px;
+  }
+  .manage-transfer-info-item-left,
+  .manage-transfer-info-item-right {
+    width: 50%;
+  }
+  .manage-transfer-info-item-left p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282;
+    margin: 0;
+  }
+  
+  .manage-transfer-info-item-right {
+    text-align: end;
+    padding-left: 15px;
+  }
+  .manage-transfer-info-item-right p {
+    color: #4f4f4f;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+  }
+  .manage-transfer-info-item-right-money p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #649eff;
+  }
+  
+  .manage-transfer-box-icon {
+    position: relative;
+    top: 130px;
+    margin: 0px 30px;
+    display: flex;
+    justify-content: end;
+    padding-bottom: 150px;
+  }
+  .manage-transfer-icon {
+    display: flex;
+    width: fit-content;
+    padding: 7px 18px;
+    background: #649eff;
+    border-radius: 13px;
+  }
+  .manage-transfer-bottom {
+    position: fixed;
+    bottom: 30px;
+    width: 84%;
+    left: 8%;
+  }
+  .manage-transfer-bottom button {
+    background: #649eff;
+    border-radius: 15px;
+    height: 50px;
+    width: 100%;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  

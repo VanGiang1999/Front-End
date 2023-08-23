@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: #f7f7f7;
+  font: 14px/1.5 "Roboto", Arial, sans-serif;
+}
+
+.manage-transfer-top {
+  height: 140px;
+  background-color: #649eff;
+}
+.manage-transfer-info-customer {
+  position: relative;
+  background-color: #ffffff;
+  margin: 0px 30px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: -45px;
+}
+.manage-transfer-info-customer-avatar-box {
+  position: absolute;
+  top: 0%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.manage-transfer-info-customer-avatar {
+  position: relative;
+  width: 78px;
+  height: 78px;
+  overflow: hidden;
+}
+.manage-transfer-info-customer-avatar img {
+  border-radius: 50%;
+  filter: drop-shadow(0px 4px 2px rgba(100, 158, 255, 0.15));
+}
+
+.manage-transfer-info-customer-name {
+  padding: 20px 20px;
+  width: 61%;
+  margin: auto;
+  margin-right: 0;
+}
+.manage-transfer-info-customer-name p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #828282;
+  margin: 0;
+}
+.manage-transfer-info-customer-name-top {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  position: relative;
+  top: -21px;
+  left: 18px;
+}
+
+.manage-transfer-account-item {
+  display: flex;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  align-items: center;
+  height: 61px;
+  margin-bottom: 24px;
+}
+.manage-transfer-account-item-left,
+.manage-transfer-account-item-right {
+  width: 50%;
+}
+.manage-transfer-account-item-left {
+}
+.manage-transfer-account-item-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.manage-transfer-account-item-left span {
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 50px;
+  border-radius: 10px;
+}
+.content_body .wrapper {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 30px;
+}
+.manage-transfer-account-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-right: 22px;
+}
+.manage-transfer-account-item-right-content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_body .drag-item--touchmove {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.content_body .drag-item--red {
+  background-color: #649eff;
+  border-radius: 10px;
+  margin-left: 4px;
+  width: 100%;
+}
+.drag-item--touchmove .manage-transfer-account-message.manage-transfer-account-message-none {
+  color: transparent;
+  line-height: 50px;
+
+} 
+.manage-transfer-account-item-right .manage-transfer-account-message.manage-transfer-account-message-none {
+  color: transparent;
+  line-height: 50px;
+
+} 
+.manage-transfer-account-item-right.drag-container .drag-item--red{
+  margin-left: 0px;
+  margin-right: 4px;
+}
+.manage-transfer-add-customer{
+  margin: 0px 30px;
+}
+.manage-transfer-add-customer-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  padding: 10px 0px;
+}
+.manage-transfer-add-customer-button p{
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: #BDBDBD;
+  line-height: 21px;
+  margin-left: 20px;
+}
+
+
+
+main {
+  background: var(--color-bg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide-button__container {
+  position: relative;
+  background: var(--slide-button-color-bg);
+  width: 300px;
+  height: 50px;
+  border-radius: 3px;
+  padding: 4px;
+  box-sizing: border-box;
+  font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
+  color: var(--slide-button-color-text);
+  font-size: 1.2em;
+  outline: none;
+  overflow: hidden;
+}
+
+.slide-button__control {
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background: var(--slide-button-control-control-bg);
+  outline: none;
+  z-index: 2;
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+
+.slide-button__control svg {
+  height: 100%;
+}
+
+.slide-button__control svg .arrow:not(.arrow__completed) {
+  fill: var(--slide-button-color-bg);
+}
+
+.slide-button__control svg .arrow.arrow__completed {
+  fill: var(--slide-button-completed-color-bg);
+  opacity: 0;
+}
+
+.slide-button__text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  top: 50%;
+  transform:  translateY(-50%);
+  pointer-events: none;
+  user-select: none;
+}
+
+.slide-button__completed-overlay {
+  width: 100%;
+  height: 100%;
+  background: var(--slide-button-completed-color-bg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+}

@@ -1,0 +1,25 @@
+1> Let, const
+ So sánh var/ let,const
+ + Scope: Phạm vi truy cập
+ + Hosting: Đưa lên đầu
+ Ex: {
+    var test = "Log data test"
+ }
+ console.log(test) => Trả da được dữ liệu.
+
+ {
+    let test = "Log data test";
+    const test2 = "Log data test"
+ }
+ console.log(test) => Lỗi vì không hiểu test ở đây là gì,
+
+
+
+ {
+    const test = "data test"
+    {
+        {
+            console.log(test)  => ok vì nằm trong blog lớn
+        }
+    }
+ }

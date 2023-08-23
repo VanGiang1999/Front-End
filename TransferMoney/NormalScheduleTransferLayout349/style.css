@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: #f7f7f7;
+  font: 14px/1.5 "Roboto", Arial, sans-serif;
+}
+.overflow.active {
+  overflow: hidden;
+}
+.beneficiary {
+  position: relative;
+  top: 200px;
+  height: 100vh;
+  padding: 40px 30px;
+  background: #ffffff;
+  box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 30px 30px 0px 0px;
+}
+.beneficiary_bank,
+.beneficiary_account,
+.beneficiary_name,
+.beneficiary_date {
+  margin-bottom: 26px;
+}
+.beneficiary_bank_title,
+.beneficiary_account_title,
+.beneficiary_name_title,
+.beneficiary_date_title,
+.beneficiary_remark_title,
+.beneficiary_remark_account_title {
+  color: #828282;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 24px;
+}
+
+.beneficiary_bank_select {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 8px;
+}
+.beneficiary_bank_select_message {
+  padding-left: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #bdbdbd;
+}
+.beneficiary_account .beneficiary_account_enter,
+.beneficiary_name_enter,
+.beneficiary_remark_enter,
+.beneficiary_remark_account_enter,
+.beneficiary_bank_date {
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+}
+.beneficiary_bank_date{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 8px;
+}
+.beneficiary_bank_date_icon{
+  display: flex;
+}
+.beneficiary_bank_enter input,
+.beneficiary_account_enter input,
+.beneficiary_remark_enter input,
+.beneficiary_remark_account_enter input,
+.beneficiary_bank_date input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-left: 8px;
+}
+.beneficiary_bank_enter input::placeholder,
+.beneficiary_account_enter input::placeholder,
+.beneficiary_remark_enter input::placeholder,
+.beneficiary_remark_account_enter input::placeholder,
+.beneficiary_bank_date input::placeholder   {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #bdbdbd;
+}
+.beneficiary_bank_date input[type="date"]::-webkit-inner-spin-button,
+.beneficiary_bank_date input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+.beneficiary_bank_date input[type=date]:invalid::-webkit-datetime-edit {
+  color: #bdbdbd;
+}
+.beneficiary_remark,
+.beneficiary_remark_account {
+  display: none;
+}
+.beneficiary_remark.active,
+.beneficiary_remark_account.active{
+  display: block;
+}
+.beneficiary_account_button button {
+  width: 100%;
+  color: #828282;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  height: 41px;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.beneficiary_name_enter input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-left: 8px;
+}
+
+.beneficiary_name_enter input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #bdbdbd;
+}
+.beneficiary_date_enter_input input {
+  width: 100%;
+  border: none;
+  color: #bdbdbd;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  outline: none;
+}
+.beneficiary_date_enter_input input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.beneficiary_remark_title {
+  display: flex;
+  align-items: center;
+}
+
+.beneficiary_remark_title svg {
+  margin-left: 13px;
+}
+
+.beneficiary_bottom {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  left: 0;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+.beneficiary_bottom button {
+  background: #649eff;
+  border-radius: 15px;
+  height: 50px;
+  width: 86%;
+  left: 8%;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  position: relative;
+}
+
+.beneficiary_modal_used_account {
+  position: fixed;
+  bottom: -100%;
+  background: #ffffff;
+  border-radius: 30px 30px 0px 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  transition: all 0.5s ease;
+}
+.beneficiary_modal_used_account.active {
+  bottom: -49%;
+}
+.beneficiary_modal_used_account .line {
+  width: 62px;
+  height: 5px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 8px;
+}
+.beneficiary_modal_used_account_content {
+  padding: 0px 30px;
+}
+.beneficiary_modal_used_account_title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #649eff;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 30px;
+}
+
+.beneficiary_modal_used_account_search_box {
+  position: relative;
+}
+.beneficiary_modal_used_account_search {
+  background: #ffffff;
+  border: 1px solid #c1bfbf;
+  border-radius: 15px;
+  height: 37px;
+  outline: none;
+  width: 87%;
+  font-size: 12px;
+  padding-left: 13%;
+  position: relative;
+}
+
+.beneficiary_modal_used_account_search::placeholder {
+  color: #bdbdbd;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+.beneficiary_modal_used_account_search_box .icon {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  width: 41px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.beneficiary_modal_used_account_list {
+  margin-top: 30px;
+  overflow-y: scroll;
+  height: 260px;
+}
+.beneficiary_modal_used_account_list::-webkit-scrollbar {
+  display: none;
+}
+.beneficiary_modal_used_account_item_top {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-gap: 4%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.beneficiary_modal_used_account_item_right {
+  text-align: end;
+}
+.beneficiary_modal_used_account_item_left,
+.beneficiary_modal_used_account_item_right {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+  text-transform: uppercase;
+}
+.beneficiary_modal_used_account_item_top,
+.beneficiary_modal_used_account_item_bank {
+  margin-bottom: 13px;
+}
+.beneficiary_modal_used_account_item {
+  border-bottom: 0.5px solid #bdbdbd;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.overlay.active {
+  display: block;
+}
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  display: none;
+}
+
+
+
+

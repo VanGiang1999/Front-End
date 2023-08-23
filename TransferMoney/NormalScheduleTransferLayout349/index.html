@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="overflow">
+        <div class="container">
+            <div class="beneficiary">
+                <div class="beneficiary_bank">
+                    <div class="beneficiary_bank_title">Beneficiary bank</div>
+                    <div class="beneficiary_bank_select">
+                        <div  class="beneficiary_bank_enter">
+                            <input type="text" placeholder="Select bank" id="name_bank">
+                        </div>
+                        <div class="beneficiary_bank_select_icon">
+                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 8L0.669873 0.500001L9.33013 0.500001L5 8Z" fill="#8E8E8E"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                </div>
+                <div class="beneficiary_account">
+                    <div class="beneficiary_account_title">
+                        Beneficiary account
+                    </div>
+                    <div class="beneficiary_account_enter">
+                        <input type="text" placeholder="Enter beneficiary account" id="account_bank">
+                    </div>
+                    <div class="beneficiary_account_button">
+                        <button>Frequently used account</button>
+                    </div>
+                </div>
+                <div class="beneficiary_name">
+                    <div class="beneficiary_name_title">
+                        Beneficiary name
+                    </div>
+                    <div class="beneficiary_name_enter">
+                        <input type="text" placeholder="Enter beneficiary name" id="name_account_bank">
+                    </div>
+                </div>
+                <div class="beneficiary_date">
+                    <div class="beneficiary_date_title">
+                        Transfer date
+                    </div>
+                    <div class="beneficiary_bank_date">
+                        <div class="beneficiary_bank_date_enter" id="date_bank">
+                            <input type="date" required  id="timeDate">
+                        </div>
+                        <div class="beneficiary_bank_date_icon">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_734_10654)">
+                                <path d="M19.5007 5.41602H6.50065C5.30403 5.41602 4.33398 6.38607 4.33398 7.58268V20.5827C4.33398 21.7793 5.30403 22.7493 6.50065 22.7493H19.5007C20.6973 22.7493 21.6673 21.7793 21.6673 20.5827V7.58268C21.6673 6.38607 20.6973 5.41602 19.5007 5.41602Z" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17.334 3.25V7.58333" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.66602 3.25V7.58333" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.33398 11.916H21.6673" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.834 17.334H15.1673" stroke="#828282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_734_10654">
+                                <rect width="26" height="26" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="beneficiary_remark">
+                    <div class="beneficiary_remark_title">Remark on beneficiary account <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="7" cy="7" r="7" fill="#BDBDBD"/>
+                        <path d="M7.48411 8.543C7.48411 9.10581 7.48677 9.6691 7.48305 10.2319C7.48092 10.6001 7.2477 10.8414 6.88112 10.8653C6.54589 10.8871 6.24626 10.6527 6.21704 10.3453C6.21279 10.2995 6.2096 10.2538 6.2096 10.2081C6.20907 9.09462 6.20854 7.98116 6.2096 6.86771C6.21013 6.51504 6.3812 6.29468 6.70474 6.22318C7.07503 6.14097 7.45967 6.38224 7.47242 6.73005C7.49102 7.22573 7.48199 7.72238 7.48411 8.21855C7.48464 8.32605 7.48411 8.43452 7.48411 8.543Z" fill="white"/>
+                        <path d="M6 4.77496C6.00106 4.34592 6.3873 3.99471 6.85269 4.00006C7.32392 4.00541 7.69687 4.35321 7.69422 4.78517C7.69156 5.20643 7.30852 5.55618 6.84844 5.55715C6.38358 5.55764 5.99894 5.20351 6 4.77496Z" fill="white"/>
+                        </svg>
+                     </div>
+                     <div class="beneficiary_remark_enter">
+                        <input type="text" placeholder="Enter remark">
+                     </div>
+                </div>
+                <div class="beneficiary_remark_account">
+                    <div class="beneficiary_remark_account_title">
+                        Remark on my account
+                    </div>
+                    <div class="beneficiary_remark_account_enter">
+                        <input type="text" placeholder="NGUYEN THU VAN">
+                    </div>
+                </div>
+                <div class="beneficiary_bottom">
+                    <button  onclick="return validate();">Next</button>
+                </div>
+            </div>
+            <div class="beneficiary_modal_used_account">
+                <div class="line"></div>
+                <div class="beneficiary_modal_used_account_content">
+                    <div class="beneficiary_modal_used_account_title">
+                        Frequently used account
+                    </div>
+                    <div class="beneficiary_modal_used_account_search_box">
+                        <input type="text" placeholder="Enter bank information" class="beneficiary_modal_used_account_search">
+                        <div class="icon">
+                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.3944 7.50721C12.3944 10.6666 10.0246 13.0515 7.31143 13.0515C4.59831 13.0515 2.22852 10.6666 2.22852 7.50721C2.22852 4.34784 4.59831 1.96289 7.31143 1.96289C10.0246 1.96289 12.3944 4.34784 12.3944 7.50721Z"
+                                    stroke="#D9D9D9" stroke-width="3" />
+                                <line x1="1.5" y1="-1.5" x2="6.09628" y2="-1.5"
+                                    transform="matrix(0.682774 0.73063 -0.682774 0.73063 10.7598 12.541)"
+                                    stroke="#D9D9D9" stroke-width="3" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="beneficiary_modal_used_account_list">
+                        <div class="beneficiary_modal_used_account_item">
+                            <div class="beneficiary_modal_used_account_item_top">
+                                <div class="beneficiary_modal_used_account_item_left">
+                                    100100140404444000
+                                </div>
+                                <div class="beneficiary_modal_used_account_item_right">
+                                    NGUYEN THU VAN
+                                </div>
+                            </div>
+                            <div class="beneficiary_modal_used_account_item_bank">
+                                NH TMCP DAU TU VA PHAT TRIEN VIETNAM - BIDV - HOI SO CHINH
+                            </div>
+                            <div class="beneficiary_modal_used_account_item_bank2">
+                                CN HA NOI
+                            </div>
+                        </div>
+                        <div class="beneficiary_modal_used_account_item">
+                            <div class="beneficiary_modal_used_account_item_top">
+                                <div class="beneficiary_modal_used_account_item_left">
+                                    100100140404444000
+                                </div>
+                                <div class="beneficiary_modal_used_account_item_right">
+                                    NGUYEN THU VAN
+                                </div>
+                            </div>
+                            <div class="beneficiary_modal_used_account_item_bank">
+                                NH TMCP DAU TU VA PHAT TRIEN VIETNAM - BIDV - HOI SO CHINH
+                            </div>
+                            <div class="beneficiary_modal_used_account_item_bank2">
+                                CN HA NOI
+                            </div>
+                        </div>
+                        <div class="beneficiary_modal_used_account_item">
+                            <div class="beneficiary_modal_used_account_item_top">
+                                <div class="beneficiary_modal_used_account_item_left">
+                                    100100140404444000
+                                </div>
+                                <div class="beneficiary_modal_used_account_item_right">
+                                    NGUYEN THU VAN
+                                </div>
+                            </div>
+                            <div class="beneficiary_modal_used_account_item_bank">
+                                NH TMCP DAU TU VA PHAT TRIEN VIETNAM - BIDV - HOI SO CHINH
+                            </div>
+                            <div class="beneficiary_modal_used_account_item_bank2">
+                                CN HA NOI
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="overlay" onclick="closeMainMenu()"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

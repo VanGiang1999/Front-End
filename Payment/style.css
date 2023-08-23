@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.wb_payment_completed_top {
+  height: 65px;
+  background: #649eff;
+}
+.wb_payment_completed_bottom {
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 30px 30px 0px 0px;
+  top: 35px;
+  height: calc(100% - 35px);
+  overflow: scroll;
+}
+.wb_payment_completed_bottom::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+
+.wb_icon_completed {
+  text-align: center;
+  margin-top: 40px;
+}
+.wb_payment_completed_title {
+  color: #649eff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 21px;
+  text-align: center;
+}
+.wb_payment_completed_message {
+  text-align: center;
+  color: #bdbdbd;
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+}
+.wb_payment_completed_money span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+  margin-right: 9px;
+}
+.wb_payment_completed_money {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #649eff;
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+  justify-content: center;
+}
+.wb_payment_completed_account_box {
+  margin-top: 33px;
+  padding: 0px 30px;
+}
+.wb_payment_completed_account_title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #bdbdbd;
+  padding-left: 10px;
+}
+.wb_payment_completed_account {
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 15px;
+  margin-top: 9px;
+  padding: 13px 20px;
+  display: grid;
+  grid-template-columns: 40% 55%;
+  grid-gap: 5%;
+  align-items: center;
+}
+.wb_payment_completed_account_left {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_payment_completed_account_right {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+  text-align: end;
+}
+.wb_payment_completed_pay_box {
+  padding: 0px 30px;
+  margin-top: 24px;
+}
+.wb_payment_completed_pay_box .wb_payment_completed_pay_title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #bdbdbd;
+  padding-left: 10px;
+}
+.wb_payment_completed_pay {
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin-top: 9px;
+}
+.wb_payment_completed_pay_message {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_payment_completed_pay_value {
+  margin-top: 11px;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-gap: 4%;
+}
+.wb_payment_completed_pay_value_left {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #649eff;
+}
+.wb_payment_completed_pay_value_right {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+  text-align: end;
+}
+.wb_payment_completed_remark_box {
+  margin-top: 24px;
+  padding: 0px 30px;
+}
+.wb_payment_completed_remark_title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #bdbdbd;
+  padding-left: 10px;
+}
+.wb_payment_completed_remark_message {
+  background: #eef4ff;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  padding: 13px 20px;
+  margin-top: 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+.wb_payment_completed_transaction {
+  margin-top: 24px;
+  padding: 0px 30px;
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+}
+
+.wb_payment_completed_transaction_left {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #bdbdbd;
+}
+.wb_payment_completed_transaction_center,
+.wb_payment_completed_transaction_right {
+  color: #828282;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: end;
+}
+.wb_payment_completed_social {
+  padding: 0px 30px;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.wb_icon_social {
+  margin-bottom: 7px;
+}
+.wb_icon_social svg {
+  padding: 13px;
+  background: #ffffff;
+  box-shadow: 0px 0px 3px rgb(0 0 0 / 25%);
+  border-radius: 10px;
+  width: fit-content;
+}
+.wb_payment_completed_social_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #828282;
+}

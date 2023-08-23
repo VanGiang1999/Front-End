@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font: 14px/1.5 "Roboto", Arial, sans-serif;
+    background-color: #649eff;
+  }
+  .container {
+    height: calc(100vh - 100px);
+    display: block;
+  }
+  .manage-easy-transfer {
+    background-color: #ffffff;
+    border-radius: 30px 30px 0px 0px;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    position: relative;
+  }
+  .manage-easy-transfer-customer {
+    padding: 30px;
+    padding-bottom: 0;
+  }
+  .manage-easy-transfer-customer-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 7px;
+    margin-bottom: 24px;
+  }
+  
+  .manage-easy-transfer-customer-avatar {
+    width: 13%;
+  }
+  .manage-easy-transfer-customer-name {
+    width: 84%;
+    padding-left: 25px;
+  }
+  .manage-easy-transfer-customer-name p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4f4f4f;
+  }
+  .manage-easy-transfer-customer-next {
+    width: 3%;
+  }
+  .manage-easy-transfer-notification {
+    padding: 0px 30px;
+  }
+  .manage-easy-transfer-notification ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+  }
+  .manage-easy-transfer-notification ul li {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #828282;
+  }
+  .manage-easy-transfer-button {
+    position: fixed;
+    width: 80%;
+    bottom: 5%;
+    left: 10%;
+  }
+  .manage-easy-transfer-button button {
+    background-color: #649eff;
+    border-radius: 15px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #ffffff;
+    padding: 14px;
+    border: none;
+  }
+  .manage-easy-transfer-button-success {
+    display: flex;
+    background-color: #649eff;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 86%;
+    left: 7%;
+    bottom: 15%;
+    padding: 16px 8px;
+  }
+  .manage-easy-transfer-button-success button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    border: none;
+    background-color: #649eff;
+    padding: 0;
+    margin-left: 20px;
+  }
+  
